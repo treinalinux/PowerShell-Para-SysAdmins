@@ -22,7 +22,7 @@ Get-Content .\chaves.csv | select -Skip 1 | Set-Content novo.csv
 $revogar = Get-Content .\novo.csv
 
 ## Remove as aspas revoga a lista de certificados da chave
-$revogar.trim('"') | ForEach-Object { certutil -config "DC01\CA-CORPORATIVA" -revoke $_ }
+$revogar.trim('"') | ForEach-Object { certutil -config "DC01\CA-CORPORATIVA" -revoke $_ 6 }
 
 Write-Host "------------------Log detalhado para finalizar o chamado------------------"
 certutil -view -restrict "CertificateTemplate==User,UPN==$chave" -out "RequesterName,SerialNumber,Request.DispositionMessage" csv
