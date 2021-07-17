@@ -1,11 +1,4 @@
-# PowerShell para SysAdmins
-
-Publicados:
-
-- Revogar Certificados de usuários Versão 1.1
-
----
-## Revogar Certificados de usuários
+# Revogar Certificados de usuários
     
  Na versão 1.1 agora recebe um arquivo como entrada de dados, deixa de usar o UPN e passar usar o CommonName.
 
@@ -18,7 +11,7 @@ O script deve ajudar bastante, vale ressaltar que para usar o script você deve 
 Caso o script venha te ajudar, só informe a fonte.
  
 
-### Recebe as chaves dos usuários
+## Recebe as chaves dos usuários
 
 Certificados de usuários são válidos por 1 ano, e por isso deve informar a data com menos -1 ano, por exemplo:
 Se hoje for 19/7/2021, então informe 19/7/2020.
@@ -26,7 +19,7 @@ Se hoje for 19/7/2021, então informe 19/7/2020.
 Sua empresa pode trabalhar com templates customizados, e por isso deve verificar a validade usada na sua empresa.
 
 
-### Obtendo o serial number e gerando o relatório em csv
+## Obtendo o serial number e gerando o relatório em csv
 
 ```PorwerShell
 
@@ -34,11 +27,11 @@ certutil -view -restrict "CertificateTemplate==User,Request.Disposition=0x14,Not
 
 ```
 
-### Recebe o relatório em csv e faz o tratamento
+## Recebe o relatório em csv e faz o tratamento
 
 Necessário remover espaços em branco e principalmente as aspas no início e no fim
 
-### Revoga os certificados válidos de usuários desligados
+## Revoga os certificados válidos de usuários desligados
 
 A opção 6 garante a possibilidade de um rollback.
 
@@ -50,10 +43,11 @@ $revogar | ForEach-Object { certutil -config "DC01\CA-CORPORATIVA" -revoke $_ 6 
 
 ---
 
-### Mudança proposta para próxima versão
+## Mudança proposta para próxima versão
 
 - Tratamento de erros
 - Gerar log detalhado antes da revogação
 
 --- 
 
+Espero ter ajudado...
