@@ -6,10 +6,6 @@
 #         - Versão 1.1 agora recebe um arquivo como entrada de dados.
 #         - Deixa de usar o UPN e passar usar o CommonName
 # 
-# O AD simplesmente não remove certos certificaods, e isso é problema quando uma autenticação é feita com base no certificado.
-# O script deve ajudar bastante, vale ressaltar que para usar o script você deve fazer todos os testes necessário em cada uma das linhas.
-# 
-# Caso o script venha te ajudar, só informe a fonte.
 # 
 Clear-Host
 
