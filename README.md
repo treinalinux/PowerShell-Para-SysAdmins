@@ -1,12 +1,12 @@
 # PowerShell-Para-SysAdmins
 
-Nome............: revogar_certificados_de_usuarios.ps1
-Versão..........: 1.1
-Criado por......: Alan da Silva Ales
-Criado em.......: 26/5/2021
-Atualizado em...: 17/7/2021
-         - Versão 1.1 agora recebe um arquivo como entrada de dados.
-         - Deixa de usar o UPN e passar usar o CommonName
+- Nome............: revogar_certificados_de_usuarios.ps1
+- Versão..........: 1.1
+- Criado por......: Alan da Silva Ales
+- Criado em.......: 26/5/2021
+- Atualizado em...: 17/7/2021
+         -- Versão 1.1 agora recebe um arquivo como entrada de dados.
+         -- Deixa de usar o UPN e passar usar o CommonName
 
 ---
 
