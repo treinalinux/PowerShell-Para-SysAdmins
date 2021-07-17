@@ -1,16 +1,10 @@
-# PowerShell-Para-SysAdmins
-
-- Nome............: revogar_certificados_de_usuarios.ps1
-- Versão..........: 1.1
-- Criado por......: Alan da Silva Ales
-- Criado em.......: 26/5/2021
-- Atualizado em...: 17/7/2021         
-  Versão 1.1 agora recebe um arquivo como entrada de dados.
-  Deixa de usar o UPN e passar usar o CommonName
+# Revogar Certificados de usuários
+    
+ Na versão 1.1 agora recebe um arquivo como entrada de dados, deixa de usar o UPN e passar usar o CommonName.
 
 ---
 
-O Windows Server simplesmente não remove certos certificaods de usuários removidos do AD, e isso é problema quando uma autenticação é feita com base no certificado, a Microsoft deveria arrumar uma solução visto que o ADCS é integrado ao AD.
+O Windows Server simplesmente não remove certos certificados de usuários removidos do AD, e isso é problema quando uma autenticação é feita com base no certificado, a Microsoft deveria arrumar uma solução visto que o ADCS é integrado ao AD.
 
 O script deve ajudar bastante, vale ressaltar que para usar o script você deve fazer todos os testes necessário em cada uma das linhas.
  
